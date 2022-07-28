@@ -13,14 +13,14 @@ public class BaseTests extends DriverManager {
 	
 	LoginPage lp;
 	EnterPage ep;
-	TaskTests tp;
+	TaskPage tp;
 	
 	@BeforeMethod
 	public void setUp() {
 		init_driver();
 		lp = new LoginPage();
 		ep = new EnterPage();
-	    tp = new TaskTests();
+	    tp = new TaskPage();
 	}
 	
 	@AfterMethod
