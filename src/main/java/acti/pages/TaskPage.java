@@ -1,11 +1,23 @@
 package acti.pages;
 
 import acti.driver.DriverManager;
+
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/*
+ * Name : Task Page
+ * Developed By Anita
+ * Approved By    Hippalgaonkar
+ * Last Modified Date 7/26/2022
+ * Description : Task page  elements and its methods
+ */
+
 public class TaskPage extends DriverManager {
+
+	//************************* the page elements*************************************/
 
 
 	@FindBy(xpath = "//div[@class='title ellipsis']")
@@ -25,10 +37,11 @@ public class TaskPage extends DriverManager {
 	@FindBy(xpath = "//span[@class='innerHtml']")
 	WebElement successMessage;
 
+	// *****************************Page	// Initialization*****************************//
 	public TaskPage() {
 		PageFactory.initElements(driver, this);
 	}
-
+	// *****************************Page Actions*****************************//
 	public void clickaddnew() {
 		buttonAddnew.click();
 	}
