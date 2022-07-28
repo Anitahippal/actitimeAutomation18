@@ -1,6 +1,7 @@
 package acti.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 
 import acti.driver.Test;
 import acti.pages.EnterPage;
@@ -8,7 +9,7 @@ import acti.pages.LoginPage;
 
 public class Loginpagetests extends BaseTests {
 	      
-	@Test 
+	@org.testng.annotations.Test (priority = 1,enabled = false)
 	public void testLoginPageTitle() {
 		lp = new LoginPage();
 		String actual = "actiTIME - Login";
@@ -17,7 +18,7 @@ public class Loginpagetests extends BaseTests {
 		Assert.assertEquals(actual, expected);
 	}
 
-   @Test 
+   @org.testng.annotations.Test(priority = 2,enabled = false)
 
 	public void testForgotPasswordLink() {
 		boolean flag = lp.validateForgotPasswordlink();
@@ -26,7 +27,7 @@ public class Loginpagetests extends BaseTests {
 		Assert.assertTrue(flag);
 	}
 
-	@Test 
+	@org.testng.annotations.Test (priority = 3,enabled = false)
 	public void testActiveLogoisDisplayed() {
 
 		boolean flag = lp.validateActiImg();
@@ -35,13 +36,13 @@ public class Loginpagetests extends BaseTests {
 
 	}
 
-	@Test 
+	@org.testng.annotations.Test (dataProvider = "actidata")
 	
-	public void  testLoginFunction() {
+	public void  testLoginFunction(String username,String password) {
 
 		
-		lp.enterUserName("admin");
-		lp.enterpassword("manager");
+		lp.enterUserName("username");
+		lp.enterpassword("password");
 		lp.clicklogin();
         ep = new EnterPage();
         String actual = "John Doe";
