@@ -17,8 +17,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TaskPage extends DriverManager {
 
-	//************************* the page elements*************************************/
-
+	// ************************* the page	// elements*************************************/
 
 	@FindBy(xpath = "//div[@class='title ellipsis']")
 	WebElement buttonAddnew;
@@ -37,35 +36,71 @@ public class TaskPage extends DriverManager {
 	@FindBy(xpath = "//span[@class='innerHtml']")
 	WebElement successMessage;
 
-	// *****************************Page	// Initialization*****************************//
+	@FindBy(xpath="(//input[@placeholder='Start typing name ...'])[1]") WebElement textboxStartTyping;
+	@FindBy(xpath="//div[@class='filteredContainer']//div[@class='title']") WebElement searchedCustomer;
+	@FindBy(xpath="//div[@class='titleEditButtonContainer']//div[@class='editButton']") WebElement buttonEdit;
+	@FindBy(xpath="//div[@class='editCustomerPanelHeader']//div[@class='action'][normalize-space()='ACTIONS']" )
+	WebElement buttonAction;
+	@FindBy(xpath="//div[@class='taskManagement_customerPanel']//div[@class='title'][normalize-space()='Delete']")
+	WebElement buttonDelete;
+	@FindBy(xpath="//span[normalize-space()='Delete permanently']") WebElement buttonDeletePermanently;
+	
+	// *****************************Page //	// Initialization*****************************//
 	public TaskPage() {
 		PageFactory.initElements(driver, this);
 	}
 	// *****************************Page Actions*****************************//
+
+	public void clickDeletePermanently() {
+		buttonDeletePermanently.click();
+		Helper.fn_sleep();
+	}
+
+	public void clickDelete() {
+		buttonDelete.click();
+	}
+
+	public void clickAction() {
+		buttonAction.click();
+	}
+
+	public void clickEditButton() {
+		buttonEdit.click();
+		Helper.fn_sleep();
+	}
+
+	public void clickSearchedCustomer()
+	{
+		searchedCustomer.click();
+	}
+	public void enterCustomerType(String customername) {
+		textboxStartTyping.sendKeys(customername);
+	}
+
 	public void clickaddnew() {
 		buttonAddnew.click();
 	}
+
 	public void clicknewcusto() {
 		createCustomer.click();
-				
+
 	}
+
 	public void createnewcusto(String customername) {
-	textboxcustomername.sendKeys(customername);
-		}
-		
-	public void customerdescri (String customerdesc) {
-		txtareacustomerdes.sendKeys(customerdesc);	
-		}
-			
+		textboxcustomername.sendKeys(customername);
+	}
+
+	public void customerdescri(String customerdesc) {
+		txtareacustomerdes.sendKeys(customerdesc);
+	}
+
 	public void createcustomer() {
-				buttoncreatecustomer.click();
-				Helper.fn_sleep();
-		}
-			
-		public String successmessage() {
+		buttoncreatecustomer.click();
+		Helper.fn_sleep();
+	}
+
+	public String successmessage() {
 		return successMessage.getText();
-			}
-		
-	
+	}
 
 }
