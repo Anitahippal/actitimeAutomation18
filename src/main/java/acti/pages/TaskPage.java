@@ -1,7 +1,7 @@
 package acti.pages;
 
 import acti.driver.DriverManager;
-
+import acti.utils.Helper;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -59,6 +59,7 @@ public class TaskPage extends DriverManager {
 			
 	public void createcustomer() {
 				buttoncreatecustomer.click();
+				Helper.fn_sleep();
 		}
 			
 		public String successmessage() {
