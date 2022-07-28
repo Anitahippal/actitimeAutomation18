@@ -19,7 +19,7 @@ public class TaskPage extends DriverManager {
 	@FindBy(xpath = "//textarea[@placeholder='Enter Customer Description']")
 	WebElement txtareacustomerdes;
 
-	@FindBy(xpath = "//div[contains(text(),'Create Customer']")
+	@FindBy(xpath = "//div[contains(text(),  'Create Customer')]")
 	WebElement buttoncreatecustomer;
 
 	@FindBy(xpath = "//span[@class='innerHtml']")
