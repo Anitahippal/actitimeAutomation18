@@ -2,9 +2,11 @@ package acti.tests;
 
 import org.bouncycastle.i18n.MessageBundle;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class TaskTests extends BaseTests{
 	
+	@Test
 	public void createcustomer() {
 		lp.enterUserName("admin");
 		lp.enterpassword("manager");

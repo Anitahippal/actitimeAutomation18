@@ -1,39 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-27T20:49:00 EDT" name="Suite" finished-at="2022-07-27T20:49:18 EDT" duration-ms="18372">
+  <suite started-at="2022-07-28T15:16:56 EDT" name="Default suite" finished-at="2022-07-28T15:16:56 EDT" duration-ms="64">
     <groups>
     </groups>
-    <test started-at="2022-07-27T20:49:00 EDT" name="Test" finished-at="2022-07-27T20:49:18 EDT" duration-ms="18372">
-      <class name="acti.tests.BaseTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.BaseTests@614ca7df]" started-at="2022-07-27T20:49:00 EDT" name="setUp" finished-at="2022-07-27T20:49:04 EDT" duration-ms="4352" status="PASS">
+    <test started-at="2022-07-28T15:16:56 EDT" name="Default test" finished-at="2022-07-28T15:16:56 EDT" duration-ms="64">
+      <class name="Assertdemo.program1">
+        <test-method signature="test()[pri:0, instance:Assertdemo.program1@53fdffa1]" started-at="2022-07-28T15:16:56 EDT" name="test" finished-at="2022-07-28T15:16:56 EDT" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="init_driver()[pri:0, instance:acti.tests.BaseTests@614ca7df]" started-at="2022-07-27T20:49:04 EDT" name="init_driver" finished-at="2022-07-27T20:49:08 EDT" duration-ms="4317" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init_driver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.BaseTests@614ca7df]" started-at="2022-07-27T20:49:08 EDT" name="tearDown" finished-at="2022-07-27T20:49:09 EDT" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- acti.tests.BaseTests -->
-      <class name="acti.tests.Loginpagetests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.Loginpagetests@49049a04]" started-at="2022-07-27T20:49:09 EDT" name="setUp" finished-at="2022-07-27T20:49:13 EDT" duration-ms="4621" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="init_driver()[pri:0, instance:acti.tests.Loginpagetests@49049a04]" started-at="2022-07-27T20:49:13 EDT" name="init_driver" finished-at="2022-07-27T20:49:18 EDT" duration-ms="4779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init_driver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.Loginpagetests@49049a04]" started-at="2022-07-27T20:49:18 EDT" name="tearDown" finished-at="2022-07-27T20:49:18 EDT" duration-ms="118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- acti.tests.Loginpagetests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test -->
+      </class> <!-- Assertdemo.program1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
