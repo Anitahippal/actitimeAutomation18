@@ -12,10 +12,18 @@ import acti.driver.DriverManager;
 public class EnterPage extends DriverManager{
 	@FindBy(id ="logoutLink") WebElement linklogout;
 	@FindBy(xpath ="//a[@class='userProfileLink username ']") WebElement TextUserLoggedin;
+	@FindBy(id = "container_tasks") WebElement MenuTask;
 
+
+
+	
 	public EnterPage()  { //constructor is made
 		PageFactory.initElements(driver, this);
 	}
+	
+	 public void  clickTask(){
+		 MenuTask.click();
+	 }
 
 	public void clickLogout() {
 		linklogout.click();
