@@ -25,11 +25,12 @@ public class LoginPage extends DriverManager {
 
 	@FindBy(xpath="//div[text()='Login ']")  WebElement loginbutton;
 
+	@FindBy(linkText = "Forgot your password?") WebElement linkForgotPassword;
 	
-	@FindBy(linkText="Forgot your password?") WebElement ForgotPasswordlink;
+	@FindBy(xpath="//div[@class='atLogoImg']") WebElement imgActilogo;
 	
 
-	@FindBy(xpath="//div[@class='atLogoImg']") WebElement imgActilogo;
+	
 	
 
 	// *****************************Page	// Initialization*****************************//
@@ -59,7 +60,7 @@ public class LoginPage extends DriverManager {
 	}
 
 	public boolean validateForgotPasswordlink() {
-		return ForgotPasswordlink.isDisplayed(); // the return type is the data type boolean
+		return linkForgotPassword.isDisplayed(); // the return type is the data type boolean
 	} // right click the return
 
 	public String validateLoginPageTitle() { // the return type is the data type string

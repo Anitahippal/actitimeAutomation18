@@ -3,11 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Assertdemo.Program2">
+      <class name="acti.tests.Loginpagetests">
         <methods>
-          <include name="test"/>
+          <include name="setUp"/>
+          <include name="testLoginFunction" invocation-numbers="2"/>
+          <include name="testActiveLogoisDisplayed"/>
+          <include name="testLoginPageTitle"/>
+          <include name="tearDown"/>
+          <include name="testForgotPasswordLink"/>
         </methods>
-      </class> <!-- Assertdemo.Program2 -->
+      </class> <!-- acti.tests.Loginpagetests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
