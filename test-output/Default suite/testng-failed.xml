@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="acti.tests.Loginpagetests">
+      <class name="acti.tests.TaskTests">
         <methods>
           <include name="setUp"/>
-          <include name="testLoginFunction" invocation-numbers="2"/>
-          <include name="testLoginPageTitle"/>
+          <include name="createcustomer"/>
+          <include name="testdeletecustomer"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- acti.tests.Loginpagetests -->
+      </class> <!-- acti.tests.TaskTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

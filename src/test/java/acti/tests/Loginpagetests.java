@@ -40,8 +40,8 @@ public class Loginpagetests extends BaseTests {
 	 
 
 
-     @Test (dataProvider = "actidata")
      
+     @org.testng.annotations.Test (dataProvider = "actidata")
 	public void  testLoginFunction(String username,String password) {
 
 		
