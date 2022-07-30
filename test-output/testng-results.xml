@@ -1,24 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="7" passed="5" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-29T21:13:28 EDT" name="Suite" finished-at="2022-07-29T21:13:31 EDT" duration-ms="2722">
+  <suite started-at="2022-07-29T22:27:37 EDT" name="Default suite" finished-at="2022-07-29T22:28:35 EDT" duration-ms="58244">
     <groups>
     </groups>
-    <test started-at="2022-07-29T21:13:28 EDT" name="Test" finished-at="2022-07-29T21:13:31 EDT" duration-ms="2722">
-      <class name="Assertdemo.Program2">
-        <test-method signature="test()[pri:0, instance:Assertdemo.Program2@7bd4937b]" started-at="2022-07-29T21:13:28 EDT" name="test" finished-at="2022-07-29T21:13:28 EDT" duration-ms="2" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2022-07-29T22:27:37 EDT" name="Default test" finished-at="2022-07-29T22:28:35 EDT" duration-ms="58244">
+      <class name="acti.tests.Loginpagetests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:27:37 EDT" name="setUp" finished-at="2022-07-29T22:27:41 EDT" duration-ms="4312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="init_driver()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:27:41 EDT" name="init_driver" finished-at="2022-07-29T22:27:46 EDT" duration-ms="5006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init_driver -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:27:46 EDT" name="tearDown" finished-at="2022-07-29T22:27:46 EDT" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:27:46 EDT" name="setUp" finished-at="2022-07-29T22:27:51 EDT" duration-ms="4751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testActiveLogoisDisplayed()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:27:51 EDT" name="testActiveLogoisDisplayed" finished-at="2022-07-29T22:27:51 EDT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testActiveLogoisDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:27:51 EDT" name="tearDown" finished-at="2022-07-29T22:27:55 EDT" duration-ms="4523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:27:55 EDT" name="setUp" finished-at="2022-07-29T22:28:01 EDT" duration-ms="5052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testForgotPasswordLink()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:01 EDT" name="testForgotPasswordLink" finished-at="2022-07-29T22:28:01 EDT" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotPasswordLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:01 EDT" name="tearDown" finished-at="2022-07-29T22:28:01 EDT" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:02 EDT" name="setUp" finished-at="2022-07-29T22:28:06 EDT" duration-ms="4128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFunction(java.lang.String,java.lang.String)[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:06 EDT" name="testLoginFunction" data-provider="actidata" finished-at="2022-07-29T22:28:11 EDT" duration-ms="4246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:11 EDT" name="tearDown" finished-at="2022-07-29T22:28:11 EDT" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:11 EDT" name="setUp" finished-at="2022-07-29T22:28:15 EDT" duration-ms="4346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFunction(java.lang.String,java.lang.String)[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:15 EDT" name="testLoginFunction" data-provider="actidata" finished-at="2022-07-29T22:28:20 EDT" duration-ms="4729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:20 EDT" name="tearDown" finished-at="2022-07-29T22:28:20 EDT" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:20 EDT" name="setUp" finished-at="2022-07-29T22:28:24 EDT" duration-ms="3952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFunction(java.lang.String,java.lang.String)[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:24 EDT" name="testLoginFunction" data-provider="actidata" finished-at="2022-07-29T22:28:31 EDT" duration-ms="6632" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mangh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chitgup]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Cannot locate an element using xpath=//a[@class='userProfileLink username ']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRASHANT-LENEVO', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at Assertdemo.Program2.test(Program2.java:19)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[@class='userProfileLink username ']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRASHANT-LENEVO', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+at acti.pages.EnterPage.validateuserLoggedin(EnterPage.java:48)
+at acti.tests.Loginpagetests.testLoginFunction(Loginpagetests.java:51)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,163 +161,55 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- Assertdemo.Program2 -->
-      <class name="acti.driver.DriverManager">
-        <test-method signature="init_driver()[pri:0, instance:acti.driver.DriverManager@21e360a]" started-at="2022-07-29T21:13:28 EDT" name="init_driver" finished-at="2022-07-29T21:13:31 EDT" duration-ms="2638" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        </test-method> <!-- testLoginFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:31 EDT" name="tearDown" finished-at="2022-07-29T22:28:35 EDT" duration-ms="4120" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created
-from disconnected: received Inspector.detached event
+              <![CDATA[chrome not reachable
   (Session info: chrome=103.0.5060.134)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PRASHANT-LENEVO', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-Ordinal0 [0x00886463+2188387]
-Ordinal0 [0x0081E461+1762401]
-Ordinal0 [0x00733D78+802168]
-Ordinal0 [0x00726B4E+748366]
-Ordinal0 [0x0072673F+747327]
-Ordinal0 [0x00725D3F+744767]
-Ordinal0 [0x00724C28+740392]
-Ordinal0 [0x007250FD+741629]
-Ordinal0 [0x00724855+739413]
-Ordinal0 [0x0072F923+784675]
-Ordinal0 [0x00724805+739333]
-Ordinal0 [0x007258E8+743656]
-Ordinal0 [0x00724C28+740392]
-Ordinal0 [0x007250FD+741629]
-Ordinal0 [0x00724855+739413]
-Ordinal0 [0x0072D618+775704]
-Ordinal0 [0x00724805+739333]
-Ordinal0 [0x007258E8+743656]
-Ordinal0 [0x00724C28+740392]
-Ordinal0 [0x007250FD+741629]
-Ordinal0 [0x00724855+739413]
-Ordinal0 [0x0072B3B2+766898]
-Ordinal0 [0x00724805+739333]
-Ordinal0 [0x007258E8+743656]
-Ordinal0 [0x00724C28+740392]
-Ordinal0 [0x007250FD+741629]
-Ordinal0 [0x00724855+739413]
-Ordinal0 [0x0072002D+720941]
-Ordinal0 [0x00724805+739333]
-Ordinal0 [0x00724590+738704]
-Ordinal0 [0x007242D9+738009]
-Ordinal0 [0x007350D0+807120]
-Ordinal0 [0x007824C5+1123525]
-Ordinal0 [0x0078108A+1118346]
-Ordinal0 [0x0077C5F6+1099254]
-Ordinal0 [0x00756BE0+945120]
-Ordinal0 [0x00757AD6+948950]
-GetHandleVerifier [0x00B271F2+2712546]
-GetHandleVerifier [0x00B1886D+2652765]
-GetHandleVerifier [0x0091002A+520730]
-GetHandleVerifier [0x0090EE06+516086]
-Ordinal0 [0x0082468B+1787531]
-Ordinal0 [0x00828E88+1805960]
-Ordinal0 [0x00828F75+1806197]
-Ordinal0 [0x00831DF1+1842673]
-BaseThreadInitThunk [0x7618FA29+25]
-RtlGetAppContainerNamedObjectPath [0x77827A9E+286]
-RtlGetAppContainerNamedObjectPath [0x77827A6E+238]
-]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\prash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00ca6c5e25210e3123333d19691311e7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
-from disconnected: received Inspector.detached event
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=103.0.5060.134)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PRASHANT-LENEVO', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-Ordinal0 [0x00886463+2188387]
-Ordinal0 [0x0081E461+1762401]
-Ordinal0 [0x00733D78+802168]
-Ordinal0 [0x00726B4E+748366]
-Ordinal0 [0x0072673F+747327]
-Ordinal0 [0x00725D3F+744767]
-Ordinal0 [0x00724C28+740392]
-Ordinal0 [0x007250FD+741629]
-Ordinal0 [0x00724855+739413]
-Ordinal0 [0x0072F923+784675]
-Ordinal0 [0x00724805+739333]
-Ordinal0 [0x007258E8+743656]
-Ordinal0 [0x00724C28+740392]
-Ordinal0 [0x007250FD+741629]
-Ordinal0 [0x00724855+739413]
-Ordinal0 [0x0072D618+775704]
-Ordinal0 [0x00724805+739333]
-Ordinal0 [0x007258E8+743656]
-Ordinal0 [0x00724C28+740392]
-Ordinal0 [0x007250FD+741629]
-Ordinal0 [0x00724855+739413]
-Ordinal0 [0x0072B3B2+766898]
-Ordinal0 [0x00724805+739333]
-Ordinal0 [0x007258E8+743656]
-Ordinal0 [0x00724C28+740392]
-Ordinal0 [0x007250FD+741629]
-Ordinal0 [0x00724855+739413]
-Ordinal0 [0x0072002D+720941]
-Ordinal0 [0x00724805+739333]
-Ordinal0 [0x00724590+738704]
-Ordinal0 [0x007242D9+738009]
-Ordinal0 [0x007350D0+807120]
-Ordinal0 [0x007824C5+1123525]
-Ordinal0 [0x0078108A+1118346]
-Ordinal0 [0x0077C5F6+1099254]
-Ordinal0 [0x00756BE0+945120]
-Ordinal0 [0x00757AD6+948950]
-GetHandleVerifier [0x00B271F2+2712546]
-GetHandleVerifier [0x00B1886D+2652765]
-GetHandleVerifier [0x0091002A+520730]
-GetHandleVerifier [0x0090EE06+516086]
-Ordinal0 [0x0082468B+1787531]
-Ordinal0 [0x00828E88+1805960]
-Ordinal0 [0x00828F75+1806197]
-Ordinal0 [0x00831DF1+1842673]
-BaseThreadInitThunk [0x7618FA29+25]
-RtlGetAppContainerNamedObjectPath [0x77827A9E+286]
-RtlGetAppContainerNamedObjectPath [0x77827A6E+238]
-
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\prash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00ca6c5e25210e3123333d19691311e7
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at acti.driver.DriverManager.init_driver(DriverManager.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at acti.driver.DriverManager.quit_browser(DriverManager.java:93)
+at acti.tests.BaseTests.tearDown(BaseTests.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -230,17 +234,92 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init_driver -->
-      </class> <!-- acti.driver.DriverManager -->
-      <class name="Assertdemo.program1">
-        <test-method signature="test()[pri:0, instance:Assertdemo.program1@56cdfb3b]" started-at="2022-07-29T21:13:28 EDT" name="test" finished-at="2022-07-29T21:13:28 EDT" duration-ms="15" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:35 EDT" name="setUp" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1659148115334" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- Assertdemo.program1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginPageTitle()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:35 EDT" name="testLoginPageTitle" finished-at="2022-07-29T22:28:35 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRASHANT-LENEVO', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\prash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00ca6c5e25210e3123333d19691311e7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRASHANT-LENEVO', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\prash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00ca6c5e25210e3123333d19691311e7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at acti.driver.DriverManager.quit_browser(DriverManager.java:93)
+at acti.tests.BaseTests.tearDown(BaseTests.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.Loginpagetests@6fd83fc1]" started-at="2022-07-29T22:28:35 EDT" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1659148115337" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- acti.tests.Loginpagetests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

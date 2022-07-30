@@ -3,9 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-     
+      <class name="Assertdemo.program1"/>
+      <class name="Assertdemo.Program2"/>
+      <class name="acti.tests.TaskTests"/>
+      <class name="acti.driver.DriverManager"/>
+      <class name="acti.tests.Loginpagetests"/>
       <class name="acti.tests.BaseTests"/>
-       <class name="acti.tests.Loginpagetests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
