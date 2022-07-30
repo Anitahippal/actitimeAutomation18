@@ -9,7 +9,7 @@ import acti.pages.LoginPage;
 
 public class Loginpagetests extends BaseTests {
 
-	@org.testng.annotations.Test 
+	@org.testng.annotations.Test
 	
 	public void testLoginPageTitle() {
 		lp = new LoginPage();
@@ -29,7 +29,7 @@ public class Loginpagetests extends BaseTests {
 		Assert.assertTrue(flag);
 	}
 
-	@org.testng.annotations.Test 
+	 @org.testng.annotations.Test
 	public void testActiveLogoisDisplayed() {
 
 		boolean flag = lp.validateActiImg();
@@ -37,9 +37,11 @@ public class Loginpagetests extends BaseTests {
 		Assert.assertTrue(flag);
 
 	}
+	 
 
-	@org.testng.annotations.Test (dataProvider = "actidata")
-	
+
+     @Test (dataProvider = "actidata")
+     
 	public void  testLoginFunction(String username,String password) {
 
 		
