@@ -47,7 +47,7 @@ public class Loginpagetests extends BaseTests {
 		lp.enterpassword(password);
 		lp.clicklogin();
         ep = new EnterPage();        
-        String actual = "John";
+        String actual = "John Doe";
        	String expected = ep.validateuserLoggedin();
        	System.out.println(expected);
      	Assert.assertEquals(actual, expected);
