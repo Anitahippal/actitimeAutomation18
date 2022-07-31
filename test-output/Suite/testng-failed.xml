@@ -3,13 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="acti.tests.BaseTests">
+      <class name="acti.tests.TaskTests">
         <methods>
           <include name="setUp"/>
-          <include name="init_driver"/>
+          <include name="setUpReort"/>
+          <include name="testCreateCustomer"/>
+          <include name="testdeletecustomer"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- acti.tests.BaseTests -->
+      </class> <!-- acti.tests.TaskTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

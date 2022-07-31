@@ -2,8 +2,14 @@ package acti.tests;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import acti.driver.DriverManager;
 import acti.pages.EnterPage;
 import acti.pages.LoginPage;
@@ -15,10 +21,25 @@ import acti.utils.Excellibrary1;
 
 
 public class BaseTests extends DriverManager {
+	protected static ExtentReports report;
+	protected static ExtentTest Logger;
+	
+	
 	
 	LoginPage lp;
 	EnterPage ep;
 	TaskPage tp;
+	
+	@BeforeSuite
+	public void setUpReort() {
+		ExtentHtmlReporter extent = new ExtentHtmlReporter("./actireports/index.html"); // u can give index or any name
+																						// of your choice
+																						// create an object of
+																						// ExtenHtmlreporter
+		ExtentReports report = new ExtentReports();// create an object of extent reports and make the report as global
+													// variable
+		report.attachReporter(extent); // call a method and pass an argument of the Extent Html Reporter
+	}
 	
 	@BeforeMethod
 	public void setUp() {
@@ -31,6 +52,7 @@ public class BaseTests extends DriverManager {
 	
 	@AfterMethod
 	public void tearDown() {
+	 report.flush();
 		quit_browser();
 	}
    
