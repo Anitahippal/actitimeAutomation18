@@ -3,19 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Assertdemo.Program2">
-        <methods>
-          <include name="test"/>
-        </methods>
-      </class> <!-- Assertdemo.Program2 -->
-      <class name="acti.tests.Loginpagetests">
-        <methods>
-          <include name="setUp"/>
-          <include name="testLoginFunction" invocation-numbers="2"/>
-          <include name="testLoginPageTitle"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- acti.tests.Loginpagetests -->
       <class name="acti.tests.BaseTests">
         <methods>
           <include name="setUp"/>
