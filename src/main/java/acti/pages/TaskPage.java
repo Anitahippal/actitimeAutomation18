@@ -53,7 +53,7 @@ public class TaskPage extends DriverManager {
 
 	public void clickDeletePermanently() {
 		buttonDeletePermanently.click();
-		Helper.fn_sleep();
+		
 	}
 
 	public void clickDelete() {
@@ -66,7 +66,7 @@ public class TaskPage extends DriverManager {
 
 	public void clickEditButton() {
 		buttonEdit.click();
-		Helper.fn_sleep();
+		
 	}
 
 	public void clickSearchedCustomer()
@@ -96,7 +96,7 @@ public class TaskPage extends DriverManager {
 
 	public void createcustomer() {
 		buttoncreatecustomer.click();
-		Helper.fn_sleep();
+		
 	}
 
 	public String successmessage() {

@@ -21,7 +21,7 @@ import acti.utils.Helper;
 
 public class EnterPage extends DriverManager{
 	@FindBy(id ="logoutLink") WebElement linklogout;
-	//@FindBy(xpath ="//a[@class='userProfileLink username ']") WebElement TextUserLoggedin;
+	
 	//@FindBy(xpath = "//a[@class='userProfileLink username ']") WebElement TextUserLoggedin;
 	@FindBy(xpath = "//a[@class='userProfileLink username']") WebElement TextUserLoggedin;
 	@FindBy(xpath="//a[@class='content tasks']") WebElement MenuTask;
@@ -40,7 +40,7 @@ public class EnterPage extends DriverManager{
 	 }
 
 	public void clickLogout() {
-		Helper.fn_sleep();
+		
 		linklogout.click();
 		
 		}

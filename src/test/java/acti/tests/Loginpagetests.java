@@ -1,7 +1,7 @@
 package acti.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
+
 
 import acti.driver.Test;
 import acti.pages.EnterPage;
@@ -39,7 +39,7 @@ public class Loginpagetests extends BaseTests {
 	}
 	 
 
-	 @org.testng.annotations.Test (priority = 4,dataProvider = "Actitimedata")
+	@org.testng.annotations.Test (priority=4,dataProvider="Actitimedata")
 	public void  testLoginFunction(String username,String password)  {
 
 		
@@ -47,7 +47,7 @@ public class Loginpagetests extends BaseTests {
 		lp.enterpassword(password);
 		lp.clicklogin();
         ep = new EnterPage();        
-        String actual = "John Doe";
+        String actual ="John Doe";
        	String expected = ep.validateuserLoggedin();
        	System.out.println(expected);
      	Assert.assertEquals(actual, expected);
