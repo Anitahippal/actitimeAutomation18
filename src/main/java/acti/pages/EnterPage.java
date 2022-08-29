@@ -31,7 +31,11 @@ public class EnterPage extends DriverManager{
 	
 	public EnterPage()  { //constructor is made
 		PageFactory.initElements(driver, this);
-	}
+		
+			}
+	
+	
+	
 	
 	
 	// *****************************Page Actions*****************************//
