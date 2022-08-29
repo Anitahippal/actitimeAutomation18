@@ -53,6 +53,7 @@ public class Taskpage122 extends DriverManager1{
 
 	public void clickDeletePermanently() {
 		buttonDeletePermanently.click();
+		Helper1.fn_sleep();
 
 	}
 
@@ -66,7 +67,7 @@ public class Taskpage122 extends DriverManager1{
 
 	public void clickEditButton() {
 		buttonEdit.click();
-
+        Helper1.fn_sleep();
 	}
 
 	public void clickSearchedCustomer() {

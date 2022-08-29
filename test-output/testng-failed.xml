@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="acti.driver.DriverManager">
+      <class name="acti.tests.Loginpagetests12">
         <methods>
-          <include name="init_driver"/>
+          <include name="tearDown"/>
+          <include name="testLoginFunction" invocation-numbers="0"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- acti.driver.DriverManager -->
+      </class> <!-- acti.tests.Loginpagetests12 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

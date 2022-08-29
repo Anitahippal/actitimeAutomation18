@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import acti.driver.DriverManager1;
 import acti.utils.Helper1;
 
+
 public class Enterpage12 extends DriverManager1 {
 	
 	/*
@@ -20,10 +21,14 @@ public class Enterpage12 extends DriverManager1 {
 	//************************* the page elements*************************************/
 
 
-     @FindBy(id ="logoutLink") WebElement linklogout;
+     
 	
 	//@FindBy(xpath = "//a[@class='userProfileLink username ']") WebElement TextUserLoggedin;
-	@FindBy(xpath = "//a[@class='userProfileLink username']") WebElement TextUserLoggedin;
+//	@FindBy(xpath = "//a[@class='userProfileLink username']") WebElement TextUserLoggedin;
+     
+//	@FindBy(xpath = "//a[@class='userProfileLink username']") WebElement TextUserLoggedin;
+	@FindBy(id ="logoutLink") WebElement linklogout;
+	@FindBy(xpath = "//a[@class='userProfileLink username ']") WebElement TextUserLoggedin;
 	@FindBy(xpath="//a[@class='content tasks']") WebElement MenuTask;
 	
 	//********************Initialization**************************//
@@ -34,10 +39,7 @@ public class Enterpage12 extends DriverManager1 {
 			
 	}
 	//**************************Page Actions******************************
-	public String Userloggedin() {
-	return	TextUserLoggedin.getText();
-			
-	}
+	
 		
 	public void Taskmenu() {
 		
@@ -46,9 +48,15 @@ public class Enterpage12 extends DriverManager1 {
 	}
 	
 	public void logout() {
-		Helper1.fn_sleep();
+		
 		linklogout.click();
+		Helper1.fn_sleep();
 		
 	}
+	
+	public String Userloggedin() {
+		return	TextUserLoggedin.getText();
+				
+		}
 
 }

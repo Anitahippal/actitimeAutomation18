@@ -1,13 +1,18 @@
 package acti.tests;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+
 import acti.driver.DriverManager1;
-import acti.pages.EnterPage;
+
 import acti.pages.Enterpage12;
-import acti.pages.LoginPage;
+
 import acti.pages.Loginpag12;
-import acti.pages.TaskPage;
+
 import acti.pages.Taskpage122;
-import acti.utils.Excellibrary1;
+import acti.utils.ExcelLibrary12;
+
 
 public class Basetests12 extends DriverManager1{
 	
@@ -15,7 +20,7 @@ public class Basetests12 extends DriverManager1{
 	Enterpage12 ep;
 	Taskpage122 tp;
 
-
+@BeforeMethod
 public void setUp() {
 
 	init_driver();
@@ -24,7 +29,7 @@ public void setUp() {
 	ep= new Enterpage12();
 	tp  = new Taskpage122();
 }
-
+@AfterMethod
 public void tearDown() {
 	
 	quit_browser();
@@ -32,12 +37,12 @@ public void tearDown() {
 }
 
 
-
+@DataProvider (name="Actitimedata")
 public Object[][] testata() {
 	
 	
 	
-	Excellibrary1 x1 = new Excellibrary1("./src/test/resources/acti/testdata/Actitimedata.xlsx");
+	ExcelLibrary12 x1 = new ExcelLibrary12("./src/test/resources/acti/testdata/Actitimedata.xlsx");
 	int rows = x1.getRowCount(0);
 
 	Object[][] data = new Object[rows][2];
