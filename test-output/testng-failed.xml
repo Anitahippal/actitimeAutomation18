@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="acti.tests.TaskTests">
+      <class name="acti.driver.DriverManager">
         <methods>
-          <include name="setUp"/>
-          <include name="setUpReort"/>
-          <include name="testCreateCustomer"/>
-          <include name="testdeletecustomer"/>
-          <include name="tearDown"/>
+          <include name="init_driver"/>
         </methods>
-      </class> <!-- acti.tests.TaskTests -->
+      </class> <!-- acti.driver.DriverManager -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
