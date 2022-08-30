@@ -26,7 +26,7 @@ public class Helper1 extends DriverManager1{
 	
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);  //screen shot is also an interface
 	
-	    String   screenshotpath = "C:\\Users\\prash\\git\\actitimeAutomation18\\actireports\\Screens1\\act.png";    
+	      String   screenshotpath = "C:\\Users\\prash\\git\\actitimeAutomation18\\actireports\\Screens1\\act1.png";    
 	    
 	      try {
 			org.openqa.selenium.io.FileHandler.copy(src, new File (screenshotpath)); //copy from source to destination
