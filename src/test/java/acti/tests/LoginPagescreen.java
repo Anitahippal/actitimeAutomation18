@@ -4,27 +4,33 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import acti.pages.EnterPage;
-
-public class LoginPagescreen extends BaseTests{
+import acti.pages.Enterpage12;
+public class LoginPagescreen extends Basetests12{
 	
-	@Test
+	
+	
+	@Test(priority = 4,dataProvider = "actidata") 
+	
 public void  testLoginFunction(String username,String password)  {
 
 		
 	
-	Logger=report.createTest("test login function");
-	lp.enterUserName(username);
-	Logger.info("entered username");
-	lp.enterpassword(password);
-	Logger.info("entered password");
-	lp.clicklogin();
-	Logger.info("clicked login button");
-	ep = new EnterPage();
-	String actual ="John";
-	String expected = ep.validateuserLoggedin();
-	Assert.assertEquals(actual, expected);
-	Logger.pass("logged in successfully");
-	ep.clickLogout();
-	Logger.info("clicked logout");
-}
-}
+		
+		
+		
+			logger=report.createTest("test login function");
+			lp.enterusername(username);
+			logger.info("entered username");
+			lp.enterpassword(password);
+			logger.info("entered password");
+			lp.loginclick();
+			logger.info("clicked login button");
+		    ep	= new Enterpage12();
+			String actual ="John";
+			String expected = ep.Userloggedin();
+			Assert.assertEquals(actual, expected);
+			logger.pass("logged in successfully");
+			ep.logout();
+			logger.info("clicked logout");
+	}
+		}

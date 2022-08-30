@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="acti.tests.Taskpagetest122">
+      <class name="acti.pages.Taskpage122">
         <methods>
-          <include name="tearDown"/>
-          <include name="testcreatecustomer"/>
-          <include name="testdeletecustomer"/>
-          <include name="setUp"/>
+          <include name="init_driver"/>
         </methods>
-      </class> <!-- acti.tests.Taskpagetest122 -->
+      </class> <!-- acti.pages.Taskpage122 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
