@@ -9,14 +9,11 @@ public class LoginPagescreen extends Basetests12{
 	
 	
 	
-	@Test(priority = 4,dataProvider = "actidata") 
+	  
 	
-public void  testLoginFunction(String username,String password)  {
+	        @Test(priority=4,dataProvider = "Actitimedata")
+            public void  testLoginFunction(String username,String password)  {
 
-		
-	
-		
-		
 		
 			logger=report.createTest("test login function");
 			lp.enterusername(username);
@@ -34,3 +31,5 @@ public void  testLoginFunction(String username,String password)  {
 			logger.info("clicked logout");
 	}
 		}
+
+

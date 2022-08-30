@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="acti.pages.Taskpage122">
+      <class name="acti.tests.LoginPagescreen">
         <methods>
-          <include name="init_driver"/>
+          <include name="testLoginFunction" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="tearDown"/>
+          <include name="setupReport"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- acti.pages.Taskpage122 -->
+      </class> <!-- acti.tests.LoginPagescreen -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
