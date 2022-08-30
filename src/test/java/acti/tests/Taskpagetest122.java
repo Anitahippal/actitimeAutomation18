@@ -18,13 +18,13 @@ public class Taskpagetest122 extends Basetests12{
 		String actual = ep.Userloggedin();
 		Assert.assertEquals(actual, expected);
 	    ep.Taskmenu();
-	    tp.clickaddnew();
-	    tp.createcustomer(); //changes
-	    tp.createnewcusto("Test Customer"); //creation of new customer
-	    tp.customerdescri("adrey kell road");
-	    tp.clicknewcusto(); //changes
+	    tp.clickAddNew();
+	    tp.clickNewCustomer();
+	    tp.enterCustomerName("Test Customer"); //creation of new customer
+	    tp.enterCustomerDescription("adrey kell road");
+	    tp.clickCreateCustomer(); 
 	   
-	  String message = tp.successmessage();
+	  String message = tp.getSuccessMessage();
 	  Assert.assertTrue(message.contains("has been created"));
 	  ep.logout();
 	  	 
@@ -47,7 +47,7 @@ public class Taskpagetest122 extends Basetests12{
 		tp.clickAction();
 		tp.clickDelete();
 		tp.clickDeletePermanently();
-		String message = tp.successmessage();
+		String message = tp.getSuccessMessage();
 	    Assert.assertTrue(message.contains("has been deleted"));
 		ep.logout();
 		  	 

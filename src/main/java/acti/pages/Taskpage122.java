@@ -9,125 +9,88 @@ import acti.driver.DriverManager1;
 import acti.utils.Helper1;
 
 public class Taskpage122 extends DriverManager1{
-
-	// ************************* the page //
-	// elements*************************************/
-
-	//@FindBy(xpath = "//div[@class='title ellipsis']")
-	//WebElement buttonAddnew;
-	
-	
-	//@FindBy(xpath= "//div[@class='title ellipsis']")
-	//WebElement buttonAddnew;
-	
-	//@FindBy(linkText = "Add New") WebElement buttonAddnew;
-	
-	
-	
-	//New
 	
 	@FindBy(xpath = "//div[text()='Add New']") WebElement buttonAddNew;
-	
-	
-	@FindBy(xpath = "//div[@class='item createNewCustomer']")
-	WebElement createCustomer;
-
-	@FindBy(xpath = "//input[@class='inputFieldWithPlaceholder newNameField inputNameField']")
-	WebElement textboxcustomername;
-
-	@FindBy(xpath = "//textarea[@placeholder='Enter Customer Description']")
-	WebElement txtareacustomerdes;
-
-	
+	@FindBy(xpath = "//div[@class='item createNewCustomer']") WebElement itemNewCustomer;
+	@FindBy(xpath = "//input[@class='inputFieldWithPlaceholder newNameField inputNameField']") 
+	WebElement textboxCustomerName;
+	@FindBy(xpath = "//textarea[@placeholder='Enter Customer Description']") WebElement textareaCustomerDescription;
 	@FindBy(xpath = "//div[contains(text(),'Create Customer')]") WebElement buttonCreateCustomer;
-
-@FindBy(xpath = "//span[@class='innerHtml']")
-	WebElement successMessage;
-@FindBy(xpath ="(//input[@placeholder='Start typing name ...'])[1]") WebElement textboxStartTyping;
-//@FindBy(xpath="(//input[@placeholder='Start typing name ...'])[1]") WebElement textboxStartTyping;
-	
-	
-	
-	
-		@FindBy(xpath = "//div[@class='filteredContainer']//div[@class='title']")
-WebElement searchedCustomer;
-	@FindBy(xpath = "//div[@class='titleEditButtonContainer']//div[@class='editButton']")
-	WebElement buttonEdit;
-	@FindBy(xpath = "//div[@class='editCustomerPanelHeader']//div[@class='action'][normalize-space()='ACTIONS']")
+	@FindBy(xpath = "//span[@class='innerHtml']") WebElement textSuccesMessage;
+	@FindBy(xpath="(//input[@placeholder='Start typing name ...'])[1]") WebElement textboxStartTyping;
+	@FindBy(xpath="//div[@class='filteredContainer']//div[@class='title']") WebElement searchedCustomer;
+	@FindBy(xpath="//div[@class='titleEditButtonContainer']//div[@class='editButton']") WebElement buttonEdit;
+	@FindBy(xpath="//div[@class='editCustomerPanelHeader']//div[@class='action'][normalize-space()='ACTIONS']" )
 	WebElement buttonAction;
-	@FindBy(xpath = "//div[@class='taskManagement_customerPanel']//div[@class='title'][normalize-space()='Delete']")
+	@FindBy(xpath="//div[@class='taskManagement_customerPanel']//div[@class='title'][normalize-space()='Delete']")
 	WebElement buttonDelete;
-	@FindBy(xpath = "//span[normalize-space()='Delete permanently']")
-	WebElement buttonDeletePermanently;
+	@FindBy(xpath="//span[normalize-space()='Delete permanently']") WebElement buttonDeletePermanently;
 
-
-	
-	
-	
-	
 	
 	// Page Initilalization
-
-	public void Taskpage122() {
-		
+	
+	public Taskpage122() {
 		PageFactory.initElements(driver, this);
-
 	}
-
-	public void clickDeletePermanently() {
+	
+	public void clickDeletePermanently()
+	{
 		buttonDeletePermanently.click();
 		Helper1.fn_sleep();
-
 	}
-
-	public void clickDelete() {
+	
+	public void clickDelete()
+	{
 		buttonDelete.click();
 	}
-
-	public void clickAction() {
+	
+	public void clickAction()
+	{
 		buttonAction.click();
 	}
-
-	public void clickEditButton() {
+	
+	public void clickEditButton()
+	{
 		buttonEdit.click();
-        Helper1.fn_sleep();
+		Helper1.fn_sleep();
 	}
-
-	public void clickSearchedCustomer() {
+	
+	public void clickSearchedCustomer()
+	{
 		searchedCustomer.click();
 	}
-
-	public void enterCustomerType(String customername) {
+	
+	public void enterCustomerType(String customername) 
+	{
 		textboxStartTyping.sendKeys(customername);
-		//textboxStartTyping;
 	}
-
-	public void clickaddnew() {
+	
+	
+	public void clickAddNew() {
 		buttonAddNew.click();
-		
 	}
-
-	public void clicknewcusto() {
-		createCustomer.click();
-
+	
+	public void clickNewCustomer() {
+		itemNewCustomer.click();
 	}
-
-	public void createnewcusto(String customername) {
-		textboxcustomername.sendKeys(customername);
+	
+	public void enterCustomerName(String customername) {
+		textboxCustomerName.sendKeys(customername);
 	}
-
-	public void customerdescri(String customerdesc) {
-		txtareacustomerdes.sendKeys(customerdesc);
+	
+	public void enterCustomerDescription(String customerdescription) {
+		textareaCustomerDescription.sendKeys(customerdescription);
 	}
-
-	public void createcustomer() {
+	
+	public void clickCreateCustomer() {
 		buttonCreateCustomer.click();
 		Helper1.fn_sleep();
-
 	}
-
-	public String successmessage() {
-		return successMessage.getText();
+	
+	public String getSuccessMessage() {
+		return textSuccesMessage.getText();
 	}
-
+	
 }
+
+	

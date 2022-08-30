@@ -12,6 +12,7 @@ import acti.pages.Loginpag12;
 
 import acti.pages.Taskpage122;
 import acti.utils.ExcelLibrary12;
+import acti.utils.Helper1;
 
 
 public class Basetests12 extends DriverManager1{
@@ -33,6 +34,7 @@ public void setUp() {
 public void tearDown() {
 	
 	quit_browser();
+	Helper1.fn_sleep();
 	
 }
 
