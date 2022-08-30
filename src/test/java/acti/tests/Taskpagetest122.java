@@ -3,8 +3,13 @@ package acti.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
+
 public class Taskpagetest122 extends Basetests12{
-	@Test
+	
+	
+	@Test(priority=1)
+	
 	public void testcreatecustomer() {
 		lp.enterusername("admin");
 		lp.enterpassword("manager");
@@ -14,10 +19,11 @@ public class Taskpagetest122 extends Basetests12{
 		Assert.assertEquals(actual, expected);
 	    ep.Taskmenu();
 	    tp.clickaddnew();
-	    tp.clicknewcusto();
+	    tp.createcustomer(); //changes
 	    tp.createnewcusto("Test Customer"); //creation of new customer
 	    tp.customerdescri("adrey kell road");
-	    tp.createcustomer();
+	    tp.clicknewcusto(); //changes
+	   
 	  String message = tp.successmessage();
 	  Assert.assertTrue(message.contains("has been created"));
 	  ep.logout();
@@ -25,7 +31,7 @@ public class Taskpagetest122 extends Basetests12{
 		
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void testdeletecustomer() {
 		
 		lp.enterusername("admin");
@@ -45,13 +51,7 @@ public class Taskpagetest122 extends Basetests12{
 	    Assert.assertTrue(message.contains("has been deleted"));
 		ep.logout();
 		  	 
-		
-		
-		
-		
-		
-		
-		
+	
 		
 	}
 

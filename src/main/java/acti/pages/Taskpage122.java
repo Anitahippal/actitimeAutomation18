@@ -1,6 +1,6 @@
 package acti.pages;
 
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,8 +17,16 @@ public class Taskpage122 extends DriverManager1{
 	//WebElement buttonAddnew;
 	
 	
-	@FindBy(xpath= "//div[@class='title ellipsis']")
-	WebElement buttonAddnew;
+	//@FindBy(xpath= "//div[@class='title ellipsis']")
+	//WebElement buttonAddnew;
+	
+	//@FindBy(linkText = "Add New") WebElement buttonAddnew;
+	
+	
+	
+	//New
+	
+	@FindBy(xpath = "//div[text()='Add New']") WebElement buttonAddNew;
 	
 	
 	@FindBy(xpath = "//div[@class='item createNewCustomer']")
@@ -30,16 +38,19 @@ public class Taskpage122 extends DriverManager1{
 	@FindBy(xpath = "//textarea[@placeholder='Enter Customer Description']")
 	WebElement txtareacustomerdes;
 
-	@FindBy(xpath = "//div[contains(text(),  'Create Customer')]")
-	WebElement buttoncreatecustomer;
+	
+	@FindBy(xpath = "//div[contains(text(),'Create Customer')]") WebElement buttonCreateCustomer;
 
-	@FindBy(xpath = "//span[@class='innerHtml']")
+@FindBy(xpath = "//span[@class='innerHtml']")
 	WebElement successMessage;
-
-	@FindBy(xpath = "//input[@placeholder='Start typing name ...'])[1]")
-	WebElement textboxStartTyping;
-	@FindBy(xpath = "//div[@class='filteredContainer']//div[@class='title']")
-	WebElement searchedCustomer;
+@FindBy(xpath ="(//input[@placeholder='Start typing name ...'])[1]") WebElement textboxStartTyping;
+//@FindBy(xpath="(//input[@placeholder='Start typing name ...'])[1]") WebElement textboxStartTyping;
+	
+	
+	
+	
+		@FindBy(xpath = "//div[@class='filteredContainer']//div[@class='title']")
+WebElement searchedCustomer;
 	@FindBy(xpath = "//div[@class='titleEditButtonContainer']//div[@class='editButton']")
 	WebElement buttonEdit;
 	@FindBy(xpath = "//div[@class='editCustomerPanelHeader']//div[@class='action'][normalize-space()='ACTIONS']")
@@ -49,6 +60,12 @@ public class Taskpage122 extends DriverManager1{
 	@FindBy(xpath = "//span[normalize-space()='Delete permanently']")
 	WebElement buttonDeletePermanently;
 
+
+	
+	
+	
+	
+	
 	// Page Initilalization
 
 	public void Taskpage122() {
@@ -82,10 +99,12 @@ public class Taskpage122 extends DriverManager1{
 
 	public void enterCustomerType(String customername) {
 		textboxStartTyping.sendKeys(customername);
+		//textboxStartTyping;
 	}
 
 	public void clickaddnew() {
-		buttonAddnew.click();
+		buttonAddNew.click();
+		
 	}
 
 	public void clicknewcusto() {
@@ -102,7 +121,7 @@ public class Taskpage122 extends DriverManager1{
 	}
 
 	public void createcustomer() {
-		buttoncreatecustomer.click();
+		buttonCreateCustomer.click();
 		Helper1.fn_sleep();
 
 	}
