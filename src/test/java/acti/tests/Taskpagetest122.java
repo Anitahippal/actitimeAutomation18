@@ -15,8 +15,8 @@ public class Taskpagetest122 extends Basetests12{
 	    ep.Taskmenu();
 	    tp.clickaddnew();
 	    tp.clicknewcusto();
-	    tp.createnewcusto("TestCustomer");
-	    tp.customerdescri("This customer is for customer description");
+	    tp.createnewcusto("Test Customer"); //creation of new customer
+	    tp.customerdescri("adrey kell road");
 	    tp.createcustomer();
 	  String message = tp.successmessage();
 	  Assert.assertTrue(message.contains("has been created"));
@@ -35,7 +35,7 @@ public class Taskpagetest122 extends Basetests12{
 		String actual = ep.Userloggedin();
 		Assert.assertEquals(actual, expected);
 	    ep.Taskmenu();
-	    tp.enterCustomerType("TestCustomer");
+	    tp.enterCustomerType("Test Customer");
 		tp.clickSearchedCustomer();
 		tp.clickEditButton();
 		tp.clickAction();

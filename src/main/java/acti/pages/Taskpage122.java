@@ -13,8 +13,14 @@ public class Taskpage122 extends DriverManager1{
 	// ************************* the page //
 	// elements*************************************/
 
-	@FindBy(xpath = "//div[@class='title ellipsis']")
+	//@FindBy(xpath = "//div[@class='title ellipsis']")
+	//WebElement buttonAddnew;
+	
+	
+	@FindBy(xpath= "//div[@class='title ellipsis']")
 	WebElement buttonAddnew;
+	
+	
 	@FindBy(xpath = "//div[@class='item createNewCustomer']")
 	WebElement createCustomer;
 
@@ -30,7 +36,7 @@ public class Taskpage122 extends DriverManager1{
 	@FindBy(xpath = "//span[@class='innerHtml']")
 	WebElement successMessage;
 
-	@FindBy(xpath = "(//input[@placeholder='Start typing name ...'])[1]")
+	@FindBy(xpath = "//input[@placeholder='Start typing name ...'])[1]")
 	WebElement textboxStartTyping;
 	@FindBy(xpath = "//div[@class='filteredContainer']//div[@class='title']")
 	WebElement searchedCustomer;
